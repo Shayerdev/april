@@ -1,0 +1,19 @@
+parameters:
+  theme.path: ''
+
+imports:
+  - { resource: patterns.theme.yaml }
+
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: true
+
+  Shayerdev\Theme\HelloTheme:
+    arguments:
+      $phrase: 'Hi april theme'
+
+
+
+
