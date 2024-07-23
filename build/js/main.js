@@ -1,0 +1,1 @@
+(()=>{"use strict";(new class{consoleMessage(){console.log("Hello April Theme")}}).consoleMessage()})();
