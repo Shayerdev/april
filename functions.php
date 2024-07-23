@@ -10,7 +10,7 @@
  * @since ShayerTheme 1.0
  */
 
-use Shayerdev\Theme\ThemeSetup;
+use April\Theme\ThemeSetup;
 use Symfony\Component\Config\FileLocator;
 
 $theme = wp_get_theme();

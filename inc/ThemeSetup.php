@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Shayerdev\Theme;
+namespace April\Theme;
 
-use Shayerdev\Theme\ThemePatterns\PatternCategoryRegistrar;
+use April\Theme\ThemePatterns\PatternCategoryRegistrar;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Exception;

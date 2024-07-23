@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Shayerdev\Theme\Registrar\Blocks;
 
-use Shayerdev\Theme\Registrar\RegistrarInterface;
+use April\Theme\Registrar\RegistrarInterface;
 
 class RegistrarBlocks
 {

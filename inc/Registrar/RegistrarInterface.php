@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Shayerdev\Theme\Registrar;
+namespace April\Theme\Registrar;
 
 interface RegistrarInterface
 {

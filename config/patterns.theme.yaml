@@ -6,7 +6,7 @@ services:
 
 
   pattern_category_april_banners:
-    class: Shayerdev\Theme\ThemePatterns\PatternCategoryRegister
+    class: April\Theme\ThemePatterns\PatternCategoryRegister
     autowire: true
     arguments:
       $slug: 'april-banner'
@@ -14,7 +14,7 @@ services:
       $description: 'Description is coming soon'
 
 
-  Shayerdev\Theme\ThemePatterns\PatternCategoryRegistrar:
+  April\Theme\ThemePatterns\PatternCategoryRegistrar:
     autowire: true
     arguments:
       $patterns:

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Shayerdev\Theme\ThemePatterns;
+namespace April\Theme\ThemePatterns;
 
 use Exception;
 
@@ -22,7 +22,7 @@ class PatternCategoryRegistrar
     }
 
     /**
-     * @throws \Exception
+     * @throws Exception
      */
     public function register(): void
     {

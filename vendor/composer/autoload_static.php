@@ -23,7 +23,6 @@ class ComposerStaticInitab56f1c7746d041d012414862dbb2dd0
             'Symfony\\Component\\Filesystem\\' => 29,
             'Symfony\\Component\\DependencyInjection\\' => 38,
             'Symfony\\Component\\Config\\' => 25,
-            'Shayerdev\\Theme\\' => 16,
         ),
         'P' => 
         array (
@@ -35,6 +34,10 @@ class ComposerStaticInitab56f1c7746d041d012414862dbb2dd0
         array (
             'Composer\\XdebugHandler\\' => 23,
             'Composer\\Pcre\\' => 14,
+        ),
+        'A' => 
+        array (
+            'April\\Theme\\' => 12,
         ),
     );
 
@@ -71,10 +74,6 @@ class ComposerStaticInitab56f1c7746d041d012414862dbb2dd0
         array (
             0 => __DIR__ . '/..' . '/symfony/config',
         ),
-        'Shayerdev\\Theme\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/inc',
-        ),
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/src',
@@ -94,6 +93,10 @@ class ComposerStaticInitab56f1c7746d041d012414862dbb2dd0
         'Composer\\Pcre\\' => 
         array (
             0 => __DIR__ . '/..' . '/composer/pcre/src',
+        ),
+        'April\\Theme\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/inc',
         ),
     );
 

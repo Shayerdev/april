@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Shayerdev\Theme\ThemePatterns;
+namespace April\Theme\ThemePatterns;
 
 class PatternCategoryRegister implements PatternCategoryInterface
 {
