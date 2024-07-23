@@ -1,3 +1,7 @@
+parameters:
+  theme.path: ''
+  theme.slug: ''
+
 services:
   _defaults:
     autowire: true
@@ -6,7 +10,7 @@ services:
 
 
   pattern_category_april_banners:
-    class: April\Theme\ThemePatterns\PatternCategoryRegister
+    class: April\Theme\Patterns\PatternCategoryRegister
     autowire: true
     arguments:
       $slug: 'april-banner'
@@ -14,7 +18,7 @@ services:
       $description: 'Description is coming soon'
 
 
-  April\Theme\ThemePatterns\PatternCategoryRegistrar:
+  April\Theme\Patterns\PatternCategoryRegistrar:
     autowire: true
     arguments:
       $patterns:
