@@ -1,28 +1,32 @@
 <?php
 
 /**
- * Shayer Development theme functions and definitions
+ * April WordPress theme
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
  * @package WordPress
- * @subpackage ShayerTheme
- * @since ShayerTheme 1.0
+ * @subpackage April
+ * @since April 1.0
  */
 
 use April\Theme\ThemeSetup;
 use Symfony\Component\Config\FileLocator;
 
 $theme = wp_get_theme();
-$themeRoot = $theme->get_theme_root();
 $themeName = $theme->get_template();
-$themePath = join('/', [$themeRoot, $themeName]);
+$themeRoot = $theme->get_theme_root();
+$themeUrl = $theme->get_theme_root_uri();
+$themeRootPath = join('/', [$themeRoot, $themeName]);
+$themeUrlPath = join('/', [$themeUrl, $themeName]);
 
-require $themePath . '/inc/bootstrap.php';
+require $themeRootPath . '/inc/bootstrap.php';
 
 try {
     (new ThemeSetup())->run([
-        'theme.path' => $themePath,
+        'theme.slug' => 'april',
+        'theme.path' => $themeRootPath,
+        'theme.url' => $themeUrlPath,
         'config.services.path' => new FileLocator(__DIR__ . '/config'),
         'config.services.theme.file' => 'services.theme.yaml',
     ]);

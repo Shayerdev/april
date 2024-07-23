@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace April\Theme\ThemePatterns;
+namespace April\Theme\Patterns;
 
 interface PatternCategoryInterface {
     public function getSlug(): string;
