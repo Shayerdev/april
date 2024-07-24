@@ -4,9 +4,10 @@ declare(strict_types=1);
 
 namespace April\Theme\Patterns;
 
+use April\Theme\RegistrarInitInterface;
 use Exception;
 
-class PatternCategoryRegistrar
+class PatternCategoryRegistrar implements RegistrarInitInterface
 {
     /**
      * @param PatternCategoryInterface[] $patterns

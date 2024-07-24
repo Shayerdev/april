@@ -4,9 +4,10 @@ declare(strict_types=1);
 
 namespace April\Theme\Scripts;
 
+use April\Theme\RegistrarInitInterface;
 use Exception;
 
-class ScriptsRegistrar
+class ScriptsRegistrar implements RegistrarInitInterface
 {
     /**
      * @param ScriptInterface[] $scripts

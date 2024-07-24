@@ -4,9 +4,10 @@ declare(strict_types=1);
 
 namespace April\Theme\Styles;
 
+use April\Theme\RegistrarInitInterface;
 use Exception;
 
-class StylesRegistrar
+class StylesRegistrar implements RegistrarInitInterface
 {
     /**
      * @param StylesInterface[] $styles
