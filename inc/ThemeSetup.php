@@ -57,7 +57,7 @@ class ThemeSetup
     public function themePatternsCategory(
         ContainerBuilder $containerBuilder
     ): void {
-        /** @var PatternCategoryRegistrar $patternCategoryRegistrar */
+        /** @var RegistrarInitInterface $patternCategoryRegistrar */
         $patternCategoryRegistrar = $containerBuilder->get(PatternCategoryRegistrar::class);
         $patternCategoryRegistrar->init();
     }
@@ -70,11 +70,11 @@ class ThemeSetup
     public function themeAssets(
         ContainerBuilder $containerBuilder
     ): void {
-        /** @var ScriptsRegistrar $scriptsRegistrar */
+        /** @var RegistrarInitInterface $scriptsRegistrar */
         $scriptsRegistrar = $containerBuilder->get(ScriptsRegistrar::class);
         $scriptsRegistrar->init();
 
-        /** @var StylesRegistrar $stylesRegistrar */
+        /** @var RegistrarInitInterface $stylesRegistrar */
         $stylesRegistrar = $containerBuilder->get(StylesRegistrar::class);
         $stylesRegistrar->init();
     }
