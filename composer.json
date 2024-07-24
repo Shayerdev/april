@@ -1,5 +1,5 @@
 {
-  "name": "wordpress-theme/aprill",
+  "name": "wordpress-theme/april",
   "description": "Block Theme by Shayer Developer",
   "type": "wordpress-theme",
   "license": "GPL-2.0-or-later",
@@ -10,7 +10,8 @@
     }
   ],
   "scripts": {
-
+    "phpcs": "phpcs --ignore=*/vendor/* --extensions=php --standard=PSR12 ./",
+    "phpmd": "phpmd ./ ansi codesize,unusedcode,naming --exclude vendor"
   },
   "require": {
     "php": ">=8.0",
@@ -26,7 +27,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Shayerdev\\Theme\\": "inc"
+      "April\\Theme\\": "inc"
     }
   }
 }

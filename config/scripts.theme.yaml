@@ -1,0 +1,26 @@
+parameters:
+  theme.path: ''
+  theme.slug: ''
+  theme.url: ''
+
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: true
+
+  script_april_main:
+    class: April\Theme\Scripts\ScriptRegister
+    autowire: true
+    arguments:
+      $handle: 'april-main-script'
+      $src: '%theme.url%/build/js/main.js'
+      $deps: []
+      $version: '1.0'
+      $args: []
+
+  April\Theme\Scripts\ScriptsRegistrar:
+    autowire: true
+    arguments:
+      $scripts:
+        - '@script_april_main'

@@ -1,0 +1,27 @@
+parameters:
+  theme.path: ''
+  theme.slug: ''
+  theme.url: ''
+
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: true
+
+
+  style_april_main:
+    class: April\Theme\Styles\StyleRegister
+    autowire: true
+    arguments:
+      $handle: 'april-main-script'
+      $src: '%theme.url%/build/css/main.css'
+      $deps: []
+      $version: '1.0'
+      $media: 'all'
+
+  April\Theme\Styles\StylesRegistrar:
+    autowire: true
+    arguments:
+      $styles:
+        - '@style_april_main'

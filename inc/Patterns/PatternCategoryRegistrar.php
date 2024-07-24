@@ -2,11 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Shayerdev\Theme\ThemePatterns;
+namespace April\Theme\Patterns;
 
+use April\Theme\RegistrarInitInterface;
 use Exception;
 
-class PatternCategoryRegistrar
+class PatternCategoryRegistrar implements RegistrarInitInterface
 {
     /**
      * @param PatternCategoryInterface[] $patterns
@@ -22,7 +23,7 @@ class PatternCategoryRegistrar
     }
 
     /**
-     * @throws \Exception
+     * @throws Exception
      */
     public function register(): void
     {

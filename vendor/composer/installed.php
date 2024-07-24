@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
-        'name' => 'wordpress-theme/aprill',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'name' => 'wordpress-theme/april',
+        'pretty_version' => 'dev-develop',
+        'version' => 'dev-develop',
+        'reference' => '137f2411c512bd0a22692d80259b4d2e495023c9',
         'type' => 'wordpress-theme',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -71,9 +71,9 @@
             'dev_requirement' => true,
         ),
         'squizlabs/php_codesniffer' => array(
-            'pretty_version' => '3.10.1',
-            'version' => '3.10.1.0',
-            'reference' => '8f90f7a53ce271935282967f53d0894f8f1ff877',
+            'pretty_version' => '3.10.2',
+            'version' => '3.10.2.0',
+            'reference' => '86e5f5dd9a840c46810ebe5ff1885581c42a3017',
             'type' => 'library',
             'install_path' => __DIR__ . '/../squizlabs/php_codesniffer',
             'aliases' => array(),
@@ -166,10 +166,10 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
-        'wordpress-theme/aprill' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+        'wordpress-theme/april' => array(
+            'pretty_version' => 'dev-develop',
+            'version' => 'dev-develop',
+            'reference' => '137f2411c512bd0a22692d80259b4d2e495023c9',
             'type' => 'wordpress-theme',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
