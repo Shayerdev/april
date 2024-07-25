@@ -1,0 +1,26 @@
+parameters:
+  theme.path: ''
+  theme.slug: ''
+
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: true
+
+
+  menu_main_header:
+    class: April\Theme\Menus\MenuRegister
+    autowire: true
+    arguments:
+      $location: 'menu-main-header'
+      $name: 'Main Header'
+
+  April\Theme\Menus\MenusRegistrar:
+    autowire: true
+    arguments:
+      $menus:
+        - '@menu_main_header'
+
+
+

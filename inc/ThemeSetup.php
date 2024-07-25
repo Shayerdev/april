@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace April\Theme;
 
+use April\Theme\Menus\MenusRegistrar;
 use April\Theme\Patterns\PatternCategoryRegistrar;
 use April\Theme\Scripts\ScriptsRegistrar;
 use April\Theme\Styles\StylesRegistrar;
@@ -31,6 +32,7 @@ class ThemeSetup
         $containerBuilder->compile();
 
         // Setup custom Theme Pattern Categories
+        $this->themeMenus($containerBuilder);
         $this->themePatternsCategory($containerBuilder);
         $this->themeAssets($containerBuilder);
     }
@@ -77,5 +79,19 @@ class ThemeSetup
         /** @var RegistrarInitInterface $stylesRegistrar */
         $stylesRegistrar = $containerBuilder->get(StylesRegistrar::class);
         $stylesRegistrar->init();
+    }
+
+    /**
+     * @param ContainerBuilder $containerBuilder
+     * @return void
+     * @throws Exception
+     */
+    public function themeMenus(
+        ContainerBuilder $containerBuilder
+    ): void
+    {
+        /** @var RegistrarInitInterface $menusRegistrar */
+        $menusRegistrar = $containerBuilder->get(MenusRegistrar::class);
+        $menusRegistrar->init();
     }
 }
