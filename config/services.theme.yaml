@@ -6,6 +6,7 @@ imports:
   - { resource: patterns.theme.yaml }
   - { resource: scripts.theme.yaml }
   - { resource: styles.theme.yaml }
+  - { resource: menus.theme.yaml }
 
 services:
   _defaults:
